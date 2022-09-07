@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #232323;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+p {
+  font-size: 16px;
+  margin: 0;
+  color: #fff;
+}
+button {
+  border-radius: 12px;
+  padding: 8px;
+  border: none;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 195, 255, 1) 100%,
+    rgba(240, 177, 255, 1) 100%
+  );
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+button:disabled:hover {
+  opacity: 0.7;
+  color: grey;
+}
+button:not(:first-child) {
+  margin-left: 15px;
+}
+.main-content-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.app {
+  padding: 20px;
+}
+.container {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn-container {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.stats-container {
+  width: clamp(180px, 60vw, 530px);
+}
+.names-list {
+  min-width: 97px;
+  margin-right: 15px;
+}
+li:not(:first-child) {
+  margin-top: 10px;
+}
+.color-line {
+  background: rgb(85, 34, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(85, 34, 195, 1) 10%,
+    rgba(105, 36, 204, 1) 35%,
+    rgba(128, 38, 215, 1) 74%,
+    rgba(183, 43, 240, 1) 90%,
+    rgba(212, 45, 253, 1) 100%
+  );
+  transition: width 1s ease-in;
+}
+.color-line p {
+  text-align: center;
+  color: #fff;
+}
+.stats-item {
+  background-color: #3f3f3f;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1368px) {
+  .app {
+    padding: 50px;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+  li:not(:first-child) {
+    margin-top: 20px;
+  }
+  .stats-container {
+    max-width: 800px;
+  }
+}
